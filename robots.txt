@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /version-1-multipagina/
+Disallow: /version-2-moderna/
+Disallow: /404.html
+
+Sitemap: https://olympicsanluis.com.ar/sitemap.xml
+
+# Agent-instruction file (llms.txt spec): when-to-use guidance for AI agents
+# https://olympicsanluis.com.ar/llms.txt

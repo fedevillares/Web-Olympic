@@ -1,0 +1,92 @@
+DirectoryIndex index.html
+
+# Custom 404 page
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+
+# Negociacion de contenido Markdown (acceptmarkdown.com): si el agente pide
+# Accept: text/markdown, servimos el .md hermano de la misma URL en vez del
+# .html, sin redirigir (misma URL, contenido distinto -> requiere Vary: Accept,
+# ver mas abajo, para que los caches no mezclen las dos variantes).
+RewriteCond %{HTTP_ACCEPT} text/markdown [NC]
+RewriteCond %{DOCUMENT_ROOT}/index.md -f
+RewriteRule ^$ /index.md [L]
+
+RewriteCond %{HTTP_ACCEPT} text/markdown [NC]
+RewriteCond %{DOCUMENT_ROOT}/$1.md -f
+RewriteRule ^([a-z0-9-]+)\.html$ /$1.md [L]
+
+# Paginas de confianza para agentes (trust anchors): /about, /contact y /privacy
+# se sirven directo (200, sin redirigir) reusando contenido existente. Al pasar
+# por [L] el motor reinicia el ruleset, asi que heredan la negociacion Markdown
+# de arriba automaticamente (no hace falta duplicar esas reglas aca).
+RewriteRule ^about/?$ historia.html [L]
+RewriteRule ^contact/?$ contacto.html [L]
+RewriteRule ^privacy/?$ privacy.html [L]
+
+# Redirecciones 301: URLs viejas sin .html que Google todavia tiene indexadas
+# hacia las paginas actuales (evita el error "no encontrada" en Search Console)
+RedirectMatch 301 ^/contacto/?$ /contacto.html
+RedirectMatch 301 ^/servicios/?$ /servicios.html
+RedirectMatch 301 ^/productos/?$ /productos.html
+RedirectMatch 301 ^/calidad/?$ /calidad.html
+RedirectMatch 301 ^/historia/?$ /historia.html
+RedirectMatch 301 ^/historia-de-nuestra-empresa/?$ /historia.html
+RedirectMatch 301 ^/pages/?$ /index.html
+RedirectMatch 301 ^/productos-laminados-planos-y-metal-desplegado/?$ /productos.html
+
+# Regla generica: cualquier URL "limpia" (sin extension) que coincida
+# con una pagina .html existente, redirige 301 a la version .html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^([^.]+)/?$ /$1.html [R=301,L]
+
+# El .md se sirve con Content-Type text/markdown
+AddType text/markdown .md
+AddCharset UTF-8 .md
+
+<IfModule mod_headers.c>
+  # Misma URL, dos representaciones posibles (html o md) segun Accept:
+  # avisamos a los caches/CDN que varien por ese header.
+  <FilesMatch "\.(html|md)$">
+    Header append Vary "Accept"
+  </FilesMatch>
+
+  # Cabeceras de seguridad (Lighthouse Best Practices: CSP, HSTS, COOP, XFO)
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'sha256-a4KPJvEtUftPhheWjdRYPsrHiBR2D3C3RjBkS3cY1uw=' https://unpkg.com; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'"
+</IfModule>
+
+# Compresion de texto (gzip/deflate) para reducir el peso de HTML/CSS/JS/JSON/SVG
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml text/markdown
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+  AddOutputFilterByType DEFLATE application/json application/ld+json application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Cache largo para assets con nombre estable, corto para HTML (revalida contenido)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/markdown "access plus 0 seconds"
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|png|jpe?g|webp|svg|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>

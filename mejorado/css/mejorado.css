@@ -1,0 +1,30 @@
+/* Overlay additions on top of ../css/style.css — additive only, no overrides of core theme */
+
+/* Inline field-error messages for the quote form (was a silent no-op on invalid submit) */
+.quick-form .field-error{
+  display:block;min-height:1.1em;margin-top:6px;
+  font-family:var(--mono);font-size:.74rem;letter-spacing:.02em;
+  color:var(--oxide);
+}
+.quick-form input[aria-invalid="true"],
+.quick-form textarea[aria-invalid="true"]{
+  border-color:var(--oxide);
+}
+
+/* Footer legal row (was missing entirely) */
+.footer-legal{
+  display:flex;gap:20px;flex-wrap:wrap;
+  margin-top:18px;padding-top:18px;border-top:1px solid var(--line-dark);
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.03em;text-transform:uppercase;
+}
+.footer-legal a{color:rgba(241,239,232,.6)}
+.footer-legal a:hover{color:var(--paper)}
+
+/* Accessibility refinements for the translucent nav material */
+@media (prefers-reduced-transparency: reduce){
+  header.site-nav{background:var(--graphite);backdrop-filter:none}
+}
+@media (prefers-contrast: more){
+  header.site-nav{background:var(--graphite);backdrop-filter:none;border-bottom:1px solid var(--paper)}
+  .quick-form .field-error{text-decoration:underline}
+}
