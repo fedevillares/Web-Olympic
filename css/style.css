@@ -758,3 +758,27 @@ dialog.cart[open]{animation:cart-in .25s cubic-bezier(.16,1,.3,1)}
 /* Entre 961 y 1100 px no entran logo + 6 enlaces + CTA + consulta: el CTA se oculta
    (Contacto, el botón Consulta y WhatsApp siguen visibles). */
 @media (max-width:1100px) and (min-width:961px){.nav-cta{display:none}nav.primary a{font-size:.76rem}}
+
+/* Respaldo institucional: Ternium, CCSM, AIM Rosario */
+.respaldo{background:#fff;border-bottom:1px solid var(--line-light);padding:44px 0}
+.respaldo-tit{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--oxide-dim);display:flex;align-items:center;gap:10px}
+.respaldo-tit::before{content:"";width:24px;height:2px;background:var(--oxide)}
+.respaldo-lista{list-style:none;margin-top:24px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;background:var(--line-light);border:1px solid var(--line-light)}
+.respaldo-lista li{background:#fff;padding:24px 28px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:16px;text-align:center}
+.respaldo-lista a{display:flex;align-items:center;justify-content:center;height:72px;transition:transform .2s}
+.respaldo-lista a:hover{transform:translateY(-2px)}
+.respaldo-lista img{max-height:72px;max-width:100%;width:auto;height:auto}
+.respaldo-lista p{font-size:.9rem;line-height:1.35;color:var(--ink);max-width:28ch}
+.respaldo--calidad{border-top:1px solid var(--line-light);margin-bottom:80px}
+@media (max-width:760px){
+  .respaldo-lista{grid-template-columns:1fr}
+  .respaldo-lista li{flex-direction:row;justify-content:flex-start;text-align:left;padding:18px 20px}
+  .respaldo-lista a{flex:none;width:120px;height:56px}
+  .respaldo-lista img{max-height:56px}
+}
+.footer-respaldo{padding:22px 0;border-bottom:1px solid var(--line-dark);display:flex;gap:10px 28px;flex-wrap:wrap;align-items:baseline}
+.footer-respaldo-tit{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--oxide-light)}
+.footer-respaldo ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px 24px}
+.footer-respaldo li{font-size:.86rem}
+.footer-respaldo a,.footer-respaldo span{color:rgba(241,239,232,.7)}
+.footer-respaldo a:hover{color:var(--paper)}

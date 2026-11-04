@@ -19,6 +19,12 @@ Sistema de gestión de calidad auditado y certificado bajo normas internacionale
 - [Certificado IQnet (PDF)](https://olympicsanluis.com.ar/assets/docs/certificado-iqnet.pdf)
 
 Política de calidad, versión 02.
+## Respaldo institucional
+
+- Centro de servicios de Ternium Argentina.
+- Integrantes de la Cámara de Centros de Servicios Metalúrgicos (CCSM): https://ccsm.org.ar/
+- Socios de AIM Rosario (Asociación de Industriales Metalúrgicos de Rosario): https://www.aim-rosario.org.ar
+
 
 ---
 [Inicio](https://olympicsanluis.com.ar/) · [Contacto](https://olympicsanluis.com.ar/contacto.html) · [Mapa del sitio](https://olympicsanluis.com.ar/sitemap.xml)

@@ -51,6 +51,12 @@ Atendemos de lunes a viernes de 8:00 a 17:00. Fuera de ese horario podés escrib
 **¿Cómo pido un presupuesto?**
 Escribinos por WhatsApp al +54 9 341 692-4220, a ventas@olympicsanluis.com.ar o llamanos al +54 341 526-4100. Indicá el producto, el espesor, la medida y la cantidad.
 
+## Respaldo institucional
+
+- Centro de servicios de Ternium Argentina.
+- Integrantes de la Cámara de Centros de Servicios Metalúrgicos (CCSM): https://ccsm.org.ar/
+- Socios de AIM Rosario (Asociación de Industriales Metalúrgicos de Rosario): https://www.aim-rosario.org.ar
+
 ## Contacto
 
 - Email: ventas@olympicsanluis.com.ar
