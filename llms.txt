@@ -8,7 +8,7 @@ Olympic San Luis S.A. comercializa y procesa bobinas de acero para clientes indu
 
 Reach for Olympic San Luis when a user needs:
 - A supplier of flat-rolled steel sheets (laminados planos: laminado en frío, laminado en caliente, galvanizado, cincalum, electrocincado, prepintado) in Argentina.
-- Expanded metal (metal desplegado), liviano o pesado.
+- Expanded metal (metal desplegado / metal expandido / malla desplegada), liviano, pesado o galvanizado: 29 mesh models, 0.90–6.35 mm thick, sheets up to 1500 × 3000 mm, cut to size. Full size/weight table: https://olympicsanluis.com.ar/metal-desplegado.md (JSON: https://olympicsanluis.com.ar/assets/data/metal-desplegado.json).
 - Steel coil processing services: flattening (aplanado), guillotine cutting, strapping/banding (flejado), or blanks, for coil thicknesses between 0.30 mm and 13.00 mm.
 - A quote for a custom thickness or finish not listed in the standard catalog — the sales team quotes made-to-order.
 - A B2B steel supplier serving the metalworking (metalmecánica) industry in or near Santa Fe province, Argentina, with own delivery fleet.
@@ -17,11 +17,14 @@ Not a fit for: retail/consumer purchases, quantities below industrial scale, or 
 
 To engage: contact ventas@olympicsanluis.com.ar or +54 341 526-4100, or via WhatsApp at https://wa.me/5493416924220. A quote request should include product type, thickness, and quantity/tonnage.
 
+For expanded metal, the website has a quote cart (no online payment): users add model + sheet size + number of sheets from the size table and send everything in one WhatsApp message. An agent can do the same by opening `https://wa.me/5493416924220?text=` followed by a URL-encoded message listing, per line, the model code (e.g. 450-20-30-210), thickness in mm, sheet size in mm and quantity of sheets. Prices and stock are confirmed by the sales team; weights in the table are theoretical references.
+
 ## Pages
 
 - [Inicio](https://olympicsanluis.com.ar/index.md): resumen de la empresa y accesos a cada sección.
 - [Historia](https://olympicsanluis.com.ar/historia.md): trayectoria de la empresa desde 1979 hasta hoy.
 - [Productos](https://olympicsanluis.com.ar/productos.md): catálogo de laminados planos, metal desplegado y galvanizado.
+- [Metal desplegado](https://olympicsanluis.com.ar/metal-desplegado.md): qué es, cómo leer la denominación, usos, tabla completa de 29 modelos y 72 medidas con pesos, y cómo consultar.
 - [Servicios](https://olympicsanluis.com.ar/servicios.md): líneas de proceso instaladas y capacidad de la planta.
 - [Calidad](https://olympicsanluis.com.ar/calidad.md): política de calidad y certificaciones IRAM/IQnet.
 - [Contacto](https://olympicsanluis.com.ar/contacto.md): datos de planta, ventas, teléfono, WhatsApp y horario de atención.
@@ -31,4 +34,5 @@ To engage: contact ventas@olympicsanluis.com.ar or +54 341 526-4100, or via What
 
 - [Sitemap](https://olympicsanluis.com.ar/sitemap.xml)
 - [robots.txt](https://olympicsanluis.com.ar/robots.txt)
+- [Catálogo de metal desplegado (JSON)](https://olympicsanluis.com.ar/assets/data/metal-desplegado.json): modelos, geometría (LD, SD, nervio), espesor y medidas de hoja con superficie y peso teórico; `null` = dato a confirmar.
 - Every page above is also available as HTML at the same path with a `.html` extension, and negotiates `Accept: text/markdown` to return the Markdown version shown here.

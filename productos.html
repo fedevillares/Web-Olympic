@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Productos · Olympic San Luis S.A.</title>
-<meta name="description" content="Laminados planos, metal desplegado y galvanizado. Stock permanente y corte a medida para la industria metalmecánica.">
+<title>Productos: metal desplegado, laminados planos y galvanizado · Olympic San Luis S.A.</title>
+<meta name="description" content="Metal desplegado (29 modelos, tabla de medidas y carrito de consulta por WhatsApp), laminados planos y galvanizado. Stock permanente y corte a medida en Pérez, Rosario.">
 <link rel="canonical" href="https://olympicsanluis.com.ar/productos.html">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_AR">
@@ -15,8 +15,21 @@
 <meta property="og:url" content="https://olympicsanluis.com.ar/productos.html">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
-<link rel="stylesheet" href="css/style.min.css">
+<link rel="stylesheet" href="css/style.min.css?v=20261104">
 <link rel="alternate" type="text/markdown" href="https://olympicsanluis.com.ar/productos.md" title="Versión Markdown">
+<link rel="modulepreload" href="assets/js/carrito.js?v=20261104">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Productos de Olympic San Luis S.A.",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Metal desplegado", "url": "https://olympicsanluis.com.ar/metal-desplegado.html" },
+    { "@type": "ListItem", "position": 2, "name": "Laminados planos", "url": "https://olympicsanluis.com.ar/productos.html#laminados-planos" },
+    { "@type": "ListItem", "position": 3, "name": "Galvanizado", "url": "https://olympicsanluis.com.ar/productos.html#galvanizado" }
+  ]
+}
+</script>
 </head>
 <body>
 <a href="#main" class="skip-link">Saltar al contenido</a>
@@ -39,20 +52,44 @@
   </div>
 </header>
 
-<main id="main">
+<main id="main" data-carrito-fijo>
 
   <header class="page-header mesh on-dark">
     <div class="wrap">
       <p class="breadcrumb"><a href="index.html">Inicio</a> / <span aria-current="page">Productos</span></p>
-      <h1>Laminados planos y metal desplegado</h1>
+      <h1>Metal desplegado y laminados planos</h1>
       <p class="lede">Stock permanente y corte a medida. Del laminado en frío al metal desplegado pesado, procesamos cada bobina según el espesor y la terminación que tu producción necesita.</p>
     </div>
   </header>
 
-  <section class="productos section">
+  <section class="section destacado-sec" aria-labelledby="destacado-tit">
     <div class="wrap">
+      <article class="prod-destacado" id="metal-desplegado">
+        <figure><img src="assets/images/HojasME2.jpeg" alt="Malla de metal desplegado saliendo de la prensa" width="1280" height="960" fetchpriority="high"></figure>
+        <div class="pd-body">
+          <span class="pd-badge">Destacado · Consultá con carrito</span>
+          <h2 id="destacado-tit">Metal desplegado</h2>
+          <p>Liviano, pesado y galvanizado. Elegí el modelo y la medida de hoja en la tabla, sumá todo al carrito y mandanos una sola consulta por WhatsApp con el detalle.</p>
+          <div class="pd-datos">
+            <div><b>29</b><span>Modelos de malla</span></div>
+            <div><b>0,90–6,35</b><span>Espesor mm</span></div>
+            <div><b>72</b><span>Medidas de hoja</span></div>
+          </div>
+          <div class="pd-acciones">
+            <a class="btn btn-primary" href="metal-desplegado.html#medidas">Ver medidas y sumar al carrito</a>
+            <a class="btn btn-ghost" href="metal-desplegado.html">Qué es y cómo elegir</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="productos section on-dark">
+    <div class="wrap">
+      <p class="section-tag">Catálogo</p>
+      <h2 class="section-title">Todas las categorías</h2>
       <div class="prod-grid reveal-stagger">
-        <div class="prod-card tall">
+        <div class="prod-card tall" id="laminados-planos">
           <div class="bg bg-hojas-laf"></div>
           <h3>Laminados planos</h3>
           <p class="prod-desc">Hojas de acero en largos estándar y especiales, con terminaciones para cada etapa del proceso productivo.</p>
@@ -66,9 +103,11 @@
           <div class="prod-card">
             <div class="bg bg-hojas-metal"></div>
             <h3>Metal desplegado</h3>
-            <div class="tag-list"><span>Liviano</span><span>Pesado</span></div>
+            <div class="tag-list"><span>Liviano</span><span>Pesado</span><span>Galvanizado</span><span>A medida</span></div>
+            <p class="prod-cta">Tabla de medidas y carrito →</p>
+            <a class="prod-link" href="metal-desplegado.html" aria-label="Metal desplegado: tabla de medidas y carrito de consulta"></a>
           </div>
-          <div class="prod-card">
+          <div class="prod-card" id="galvanizado">
             <div class="bg bg-hojas-galv"></div>
             <h3>Galvanizado</h3>
             <p class="prod-desc">Chapa galvanizada para exposición a la intemperie y ambientes corrosivos.</p>
@@ -108,6 +147,7 @@
         <div>
           <h4>Catálogo</h4>
           <a href="productos.html">Productos</a>
+          <a href="metal-desplegado.html">Metal desplegado</a>
           <a href="servicios.html">Servicios</a>
         </div>
         <div>
@@ -127,7 +167,8 @@
 </footer>
 
 <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js" defer></script>
-<script src="js/main.min.js" defer></script>
+<script src="js/main.min.js?v=20261104" defer></script>
+<script type="module" src="assets/js/carrito.js?v=20261104"></script>
 <a class="wa-float" href="https://wa.me/5493416924220?text=Hola%2C%20quiero%20consultar%20precio%20y%20disponibilidad" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
   <span class="wa-ring" aria-hidden="true"></span>
   <span class="wa-tooltip">Consultanos por WhatsApp</span>

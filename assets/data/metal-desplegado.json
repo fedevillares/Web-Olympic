@@ -1,0 +1,834 @@
+{
+ "actualizado": "2026-11-04",
+ "unidad": {
+  "medidas": "mm",
+  "superficie": "m2",
+  "peso": "kg"
+ },
+ "nota": "Pesos teóricos de referencia. null = dato a confirmar. Disponibilidad sujeta a stock.",
+ "modelos": [
+  {
+   "id": "132-9-18-80",
+   "codigo": "132-9-18-80",
+   "galvanizado": false,
+   "espesor": 0.9,
+   "ld": 13.2,
+   "sd": 8,
+   "nervio": 1.8,
+   "hojas": [
+    {
+     "ancho": 1000,
+     "largo": 2000,
+     "superficie": 2,
+     "kgm2": 3.4,
+     "pesoHoja": 6.8
+    }
+   ]
+  },
+  {
+   "id": "200-12-20-110",
+   "codigo": "200-12-20-110",
+   "galvanizado": false,
+   "espesor": 1.25,
+   "ld": 20,
+   "sd": 11,
+   "nervio": 2,
+   "hojas": [
+    {
+     "ancho": 1000,
+     "largo": 2000,
+     "superficie": 2,
+     "kgm2": 3.28,
+     "pesoHoja": 6.56
+    },
+    {
+     "ancho": 1220,
+     "largo": 2440,
+     "superficie": null,
+     "kgm2": null,
+     "pesoHoja": null
+    },
+    {
+     "ancho": 1500,
+     "largo": 2000,
+     "superficie": 3,
+     "kgm2": 3.28,
+     "pesoHoja": 9.84
+    },
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 3.28,
+     "pesoHoja": 14.76
+    }
+   ]
+  },
+  {
+   "id": "200-32-25-110",
+   "codigo": "200-32-25-110",
+   "galvanizado": false,
+   "espesor": 3.2,
+   "ld": 20,
+   "sd": 11,
+   "nervio": 2.5,
+   "hojas": [
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 10.48,
+     "pesoHoja": 49.5
+    }
+   ]
+  },
+  {
+   "id": "270-16-20-110",
+   "codigo": "270-16-20-110",
+   "galvanizado": false,
+   "espesor": 1.6,
+   "ld": 27,
+   "sd": 11,
+   "nervio": 2,
+   "hojas": [
+    {
+     "ancho": 1025,
+     "largo": 2000,
+     "superficie": 2,
+     "kgm2": 4.2,
+     "pesoHoja": 8.4
+    },
+    {
+     "ancho": 1025,
+     "largo": 3000,
+     "superficie": 3.07,
+     "kgm2": 4.2,
+     "pesoHoja": 12.89
+    },
+    {
+     "ancho": 1220,
+     "largo": 2440,
+     "superficie": 2.98,
+     "kgm2": 4.2,
+     "pesoHoja": 12.6
+    },
+    {
+     "ancho": 1220,
+     "largo": 3000,
+     "superficie": 3.66,
+     "kgm2": 4.2,
+     "pesoHoja": 15.37
+    },
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 4.2,
+     "pesoHoja": 18.9
+    }
+   ]
+  },
+  {
+   "id": "270-32-30-110",
+   "codigo": "270-32-30-110",
+   "galvanizado": false,
+   "espesor": 3.2,
+   "ld": 27,
+   "sd": 11,
+   "nervio": 3,
+   "hojas": [
+    {
+     "ancho": 1025,
+     "largo": 2000,
+     "superficie": 2.05,
+     "kgm2": 10.8,
+     "pesoHoja": 22.14
+    },
+    {
+     "ancho": 1025,
+     "largo": 3000,
+     "superficie": 3.07,
+     "kgm2": 10.8,
+     "pesoHoja": 33.16
+    },
+    {
+     "ancho": 1245,
+     "largo": 2440,
+     "superficie": 3.05,
+     "kgm2": 10.8,
+     "pesoHoja": 32.94
+    },
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 10.8,
+     "pesoHoja": 48.6
+    }
+   ]
+  },
+  {
+   "id": "330-16-20-140",
+   "codigo": "330-16-20-140",
+   "galvanizado": false,
+   "espesor": 1.6,
+   "ld": 33,
+   "sd": 14,
+   "nervio": 2,
+   "hojas": [
+    {
+     "ancho": 1220,
+     "largo": 2440,
+     "superficie": 2.98,
+     "kgm2": 3.36,
+     "pesoHoja": 10.01
+    }
+   ]
+  },
+  {
+   "id": "330-25-30-150",
+   "codigo": "330-25-30-150",
+   "galvanizado": false,
+   "espesor": 2.5,
+   "ld": 33,
+   "sd": 15,
+   "nervio": 3,
+   "hojas": [
+    {
+     "ancho": 1245,
+     "largo": 2000,
+     "superficie": 2.49,
+     "kgm2": 8.02,
+     "pesoHoja": 19.97
+    },
+    {
+     "ancho": 1245,
+     "largo": 2440,
+     "superficie": 3.04,
+     "kgm2": 8.02,
+     "pesoHoja": 24.38
+    },
+    {
+     "ancho": 1245,
+     "largo": 3000,
+     "superficie": 3.73,
+     "kgm2": 8.02,
+     "pesoHoja": 29.91
+    }
+   ]
+  },
+  {
+   "id": "330-32-30-150",
+   "codigo": "330-32-30-150",
+   "galvanizado": false,
+   "espesor": 3.2,
+   "ld": 33,
+   "sd": 15,
+   "nervio": 3,
+   "hojas": [
+    {
+     "ancho": 1025,
+     "largo": 2000,
+     "superficie": 2.05,
+     "kgm2": 10.27,
+     "pesoHoja": 20.91
+    },
+    {
+     "ancho": 1025,
+     "largo": 2440,
+     "superficie": 2.5,
+     "kgm2": 10.27,
+     "pesoHoja": 25.69
+    },
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 10.27,
+     "pesoHoja": 45.9
+    }
+   ]
+  },
+  {
+   "id": "450-16-20-210",
+   "codigo": "450-16-20-210",
+   "galvanizado": false,
+   "espesor": 1.6,
+   "ld": 45,
+   "sd": 21,
+   "nervio": 2,
+   "hojas": [
+    {
+     "ancho": 1220,
+     "largo": 2440,
+     "superficie": 2.98,
+     "kgm2": 2.49,
+     "pesoHoja": 7.77
+    }
+   ]
+  },
+  {
+   "id": "450-20-30-210",
+   "codigo": "450-20-30-210",
+   "galvanizado": false,
+   "espesor": 2,
+   "ld": 45,
+   "sd": 21,
+   "nervio": 3,
+   "hojas": [
+    {
+     "ancho": 1025,
+     "largo": 2000,
+     "superficie": 2.05,
+     "kgm2": 4.48,
+     "pesoHoja": 9.18
+    },
+    {
+     "ancho": 1025,
+     "largo": 3000,
+     "superficie": 3.07,
+     "kgm2": 4.48,
+     "pesoHoja": 13.75
+    },
+    {
+     "ancho": 1245,
+     "largo": 2000,
+     "superficie": 2.49,
+     "kgm2": 4.48,
+     "pesoHoja": 11.16
+    },
+    {
+     "ancho": 1245,
+     "largo": 2440,
+     "superficie": null,
+     "kgm2": null,
+     "pesoHoja": null
+    },
+    {
+     "ancho": 1245,
+     "largo": 3000,
+     "superficie": 3.73,
+     "kgm2": 4.48,
+     "pesoHoja": 16.71
+    },
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 4.48,
+     "pesoHoja": 20.16
+    }
+   ]
+  },
+  {
+   "id": "450-25-30-210",
+   "codigo": "450-25-30-210",
+   "galvanizado": false,
+   "espesor": 2.5,
+   "ld": 45,
+   "sd": 21,
+   "nervio": 3,
+   "hojas": [
+    {
+     "ancho": 1245,
+     "largo": 2000,
+     "superficie": 2.49,
+     "kgm2": 5.62,
+     "pesoHoja": 13.99
+    },
+    {
+     "ancho": 1245,
+     "largo": 2440,
+     "superficie": 3.05,
+     "kgm2": 5.62,
+     "pesoHoja": 17.14
+    },
+    {
+     "ancho": 1245,
+     "largo": 3000,
+     "superficie": 3.73,
+     "kgm2": 5.62,
+     "pesoHoja": 20.96
+    }
+   ]
+  },
+  {
+   "id": "450-32-30-210",
+   "codigo": "450-32-30-210",
+   "galvanizado": false,
+   "espesor": 3.2,
+   "ld": 45,
+   "sd": 21,
+   "nervio": 3,
+   "hojas": [
+    {
+     "ancho": 1025,
+     "largo": 2000,
+     "superficie": null,
+     "kgm2": null,
+     "pesoHoja": null
+    },
+    {
+     "ancho": 1245,
+     "largo": 2440,
+     "superficie": 3.05,
+     "kgm2": 7.19,
+     "pesoHoja": 21.66
+    },
+    {
+     "ancho": 1245,
+     "largo": 3000,
+     "superficie": 3.73,
+     "kgm2": 7.19,
+     "pesoHoja": 26.82
+    },
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 7.19,
+     "pesoHoja": 31.95
+    }
+   ]
+  },
+  {
+   "id": "450-32-40-210",
+   "codigo": "450-32-40-210",
+   "galvanizado": false,
+   "espesor": 3.2,
+   "ld": 45,
+   "sd": 21,
+   "nervio": 4,
+   "hojas": [
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 9.37,
+     "pesoHoja": 40.05
+    }
+   ]
+  },
+  {
+   "id": "500-25-30-150",
+   "codigo": "500-25-30-150",
+   "galvanizado": false,
+   "espesor": 2.5,
+   "ld": 50,
+   "sd": 15,
+   "nervio": 3,
+   "hojas": [
+    {
+     "ancho": 1245,
+     "largo": 2000,
+     "superficie": 2.49,
+     "kgm2": 4.92,
+     "pesoHoja": 12.25
+    },
+    {
+     "ancho": 1245,
+     "largo": 2440,
+     "superficie": 3.05,
+     "kgm2": 4.92,
+     "pesoHoja": 15.01
+    },
+    {
+     "ancho": 1245,
+     "largo": 3000,
+     "superficie": 3.73,
+     "kgm2": 4.92,
+     "pesoHoja": 18.35
+    }
+   ]
+  },
+  {
+   "id": "500-32-30-250",
+   "codigo": "500-32-30-250",
+   "galvanizado": false,
+   "espesor": 3.2,
+   "ld": 50,
+   "sd": 25,
+   "nervio": 3,
+   "hojas": [
+    {
+     "ancho": 1025,
+     "largo": 2000,
+     "superficie": 2.05,
+     "kgm2": 6.29,
+     "pesoHoja": 13.33
+    },
+    {
+     "ancho": 1025,
+     "largo": 3000,
+     "superficie": 3.07,
+     "kgm2": 6.29,
+     "pesoHoja": 19.31
+    },
+    {
+     "ancho": 1245,
+     "largo": 2440,
+     "superficie": 3.05,
+     "kgm2": 6.29,
+     "pesoHoja": 19.83
+    },
+    {
+     "ancho": 1245,
+     "largo": 3000,
+     "superficie": 3.73,
+     "kgm2": 6.29,
+     "pesoHoja": 23.46
+    },
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 6.29,
+     "pesoHoja": 29.25
+    }
+   ]
+  },
+  {
+   "id": "500-50-50-250",
+   "codigo": "500-50-50-250",
+   "galvanizado": false,
+   "espesor": 4.75,
+   "ld": 50,
+   "sd": 25,
+   "nervio": 5,
+   "hojas": [
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 15.56,
+     "pesoHoja": 72
+    }
+   ]
+  },
+  {
+   "id": "620-32-30-250",
+   "codigo": "620-32-30-250",
+   "galvanizado": false,
+   "espesor": 3.2,
+   "ld": 62,
+   "sd": 25,
+   "nervio": 3,
+   "hojas": [
+    {
+     "ancho": 1025,
+     "largo": 2000,
+     "superficie": 2.05,
+     "kgm2": 5.52,
+     "pesoHoja": 11.28
+    },
+    {
+     "ancho": 1025,
+     "largo": 3000,
+     "superficie": 3.07,
+     "kgm2": 5.52,
+     "pesoHoja": 16.95
+    },
+    {
+     "ancho": 1245,
+     "largo": 2440,
+     "superficie": 3.05,
+     "kgm2": 5.52,
+     "pesoHoja": 16.78
+    },
+    {
+     "ancho": 1245,
+     "largo": 3000,
+     "superficie": 3.73,
+     "kgm2": 5.52,
+     "pesoHoja": 20.59
+    },
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 5.52,
+     "pesoHoja": 24.75
+    }
+   ]
+  },
+  {
+   "id": "620-32-60-280",
+   "codigo": "620-32-60-280",
+   "galvanizado": false,
+   "espesor": 3.2,
+   "ld": 62,
+   "sd": 28,
+   "nervio": 6,
+   "hojas": [
+    {
+     "ancho": 1025,
+     "largo": 2000,
+     "superficie": 2.05,
+     "kgm2": 10.69,
+     "pesoHoja": 22.55
+    },
+    {
+     "ancho": 1025,
+     "largo": 2440,
+     "superficie": 2.5,
+     "kgm2": 10.69,
+     "pesoHoja": 26.73
+    },
+    {
+     "ancho": 1025,
+     "largo": 3000,
+     "superficie": 3.07,
+     "kgm2": 10.69,
+     "pesoHoja": 32.82
+    },
+    {
+     "ancho": 1245,
+     "largo": 2440,
+     "superficie": 3.05,
+     "kgm2": 10.69,
+     "pesoHoja": 33.55
+    },
+    {
+     "ancho": 1245,
+     "largo": 3000,
+     "superficie": 3.73,
+     "kgm2": 10.69,
+     "pesoHoja": 39.87
+    },
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 10.69,
+     "pesoHoja": 48.1
+    }
+   ]
+  },
+  {
+   "id": "620-32-60-280-galv",
+   "codigo": "620-32-60-280",
+   "galvanizado": true,
+   "espesor": 3.2,
+   "ld": 62,
+   "sd": 28,
+   "nervio": 6,
+   "hojas": [
+    {
+     "ancho": 1220,
+     "largo": 3000,
+     "superficie": 3.66,
+     "kgm2": 10.69,
+     "pesoHoja": 39.13
+    }
+   ]
+  },
+  {
+   "id": "620-50-60-280",
+   "codigo": "620-50-60-280",
+   "galvanizado": false,
+   "espesor": 4.75,
+   "ld": 62,
+   "sd": 28,
+   "nervio": 6,
+   "hojas": [
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 16.6,
+     "pesoHoja": 74.7
+    }
+   ]
+  },
+  {
+   "id": "670-32-30-270",
+   "codigo": "670-32-30-270",
+   "galvanizado": false,
+   "espesor": 3.2,
+   "ld": 67,
+   "sd": 27,
+   "nervio": 3,
+   "hojas": [
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 5.85,
+     "pesoHoja": 26.33
+    }
+   ]
+  },
+  {
+   "id": "670-32-60-270",
+   "codigo": "670-32-60-270",
+   "galvanizado": false,
+   "espesor": 3.2,
+   "ld": 67,
+   "sd": 27,
+   "nervio": 6,
+   "hojas": [
+    {
+     "ancho": 1025,
+     "largo": 3000,
+     "superficie": 3.07,
+     "kgm2": 10.78,
+     "pesoHoja": 33.09
+    },
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 10.78,
+     "pesoHoja": 48.51
+    }
+   ]
+  },
+  {
+   "id": "700-20-35-210",
+   "codigo": "700-20-35-210",
+   "galvanizado": false,
+   "espesor": 2,
+   "ld": 70,
+   "sd": 21,
+   "nervio": 3.5,
+   "hojas": [
+    {
+     "ancho": 1245,
+     "largo": 2000,
+     "superficie": 2.49,
+     "kgm2": 5.5,
+     "pesoHoja": 13.7
+    },
+    {
+     "ancho": 1245,
+     "largo": 2440,
+     "superficie": 3.05,
+     "kgm2": 5.5,
+     "pesoHoja": 16.78
+    },
+    {
+     "ancho": 1500,
+     "largo": 2000,
+     "superficie": 3,
+     "kgm2": 5.5,
+     "pesoHoja": 16.5
+    },
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 5.5,
+     "pesoHoja": 24.75
+    }
+   ]
+  },
+  {
+   "id": "750-50-50-320",
+   "codigo": "750-50-50-320",
+   "galvanizado": false,
+   "espesor": 4.75,
+   "ld": 75,
+   "sd": 32,
+   "nervio": 5,
+   "hojas": [
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 11.67,
+     "pesoHoja": 52.2
+    }
+   ]
+  },
+  {
+   "id": "750-50-80-320",
+   "codigo": "750-50-80-320",
+   "galvanizado": false,
+   "espesor": 4.75,
+   "ld": 75,
+   "sd": 32,
+   "nervio": 8,
+   "hojas": [
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 18.67,
+     "pesoHoja": 83.7
+    }
+   ]
+  },
+  {
+   "id": "900-32-30-310",
+   "codigo": "900-32-30-310",
+   "galvanizado": false,
+   "espesor": 3.2,
+   "ld": 90,
+   "sd": 31,
+   "nervio": 3,
+   "hojas": [
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": null,
+     "kgm2": null,
+     "pesoHoja": null
+    }
+   ]
+  },
+  {
+   "id": "900-32-60-310",
+   "codigo": "900-32-60-310",
+   "galvanizado": false,
+   "espesor": 3.2,
+   "ld": 90,
+   "sd": 31,
+   "nervio": 6,
+   "hojas": [
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": null,
+     "kgm2": null,
+     "pesoHoja": null
+    }
+   ]
+  },
+  {
+   "id": "1020-32-30-370",
+   "codigo": "1020-32-30-370",
+   "galvanizado": false,
+   "espesor": 3.2,
+   "ld": 102,
+   "sd": 37,
+   "nervio": 3,
+   "hojas": [
+    {
+     "ancho": 1500,
+     "largo": 2000,
+     "superficie": 3,
+     "kgm2": 3.97,
+     "pesoHoja": 11.91
+    }
+   ]
+  },
+  {
+   "id": "1020-65-80-370",
+   "codigo": "1020-65-80-370",
+   "galvanizado": false,
+   "espesor": 6.35,
+   "ld": 102,
+   "sd": 37,
+   "nervio": 8,
+   "hojas": [
+    {
+     "ancho": 1500,
+     "largo": 3000,
+     "superficie": 4.5,
+     "kgm2": 20.5,
+     "pesoHoja": 92.25
+    }
+   ]
+  }
+ ]
+}
