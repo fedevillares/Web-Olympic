@@ -1,6 +1,6 @@
 # Contacto — Olympic San Luis S.A.
 
-> Pedí tu cotización o visitá la planta de Olympic San Luis en Pérez, Santa Fe. WhatsApp, mail y teléfono directo con ventas.
+> Planta en Av. Las Palmeras 1452, Parque Industrial Metropolitano, Pérez (Gran Rosario, a minutos de Rosario). Pedí presupuesto de chapa y metal desplegado por WhatsApp, mail o teléfono.
 
 ## Planta y oficinas
 

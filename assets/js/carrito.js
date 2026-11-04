@@ -131,7 +131,7 @@ function ui() {
 
   function pintar() {
     const n = items.length;
-    boton.hidden = n === 0 && !document.querySelector('[data-carrito-fijo]');
+    boton.hidden = n === 0;
     badge.textContent = String(n);
     dlg.querySelector('.cart-head-n').textContent = n ? `(${n})` : '';
     boton.setAttribute('aria-label', n ? `Abrir consulta: ${n} ${n === 1 ? 'producto' : 'productos'}` : 'Abrir consulta (vacía)');

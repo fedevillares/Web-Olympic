@@ -731,3 +731,30 @@ dialog.cart[open]{animation:cart-in .25s cubic-bezier(.16,1,.3,1)}
 .destacado-sec .prod-destacado{margin-top:0;box-shadow:0 30px 60px -30px rgba(20,23,27,.45)}
 .cart-toast{width:max-content}
 @media (max-width:640px){.cart-toast{left:16px;right:16px;width:auto;transform:translateY(20px);justify-content:space-between}.cart-toast.on{transform:none}}
+
+/* Logo: versión recortada y ya en blanco (assets/images/logo-blanco.png, 577×128).
+   flex:none evita que el navegador lo comprima de costado cuando el menú no entra. */
+.brand{flex:none;padding:4px 0}
+.brand img{height:50px;width:auto;filter:none}
+.footer-brand img{height:36px;width:auto;filter:none}
+@media (max-width:1100px) and (min-width:961px){.brand img{height:42px}}
+@media (max-width:960px){.brand img{height:40px}}
+@media (max-width:380px){.brand img{height:34px}}
+.zona-sec{background:var(--plate)}
+.zona-lista{grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.zona-lista a{display:block;color:inherit}
+.zona-lista a:hover{color:var(--oxide)}
+.zona-datos{background:#fff;border:1px solid var(--line-light);padding:28px 32px;align-self:start}
+.zona-datos .md-sub{margin-top:0}
+.zona-datos address{font-style:normal}
+.zona-cta{margin-top:24px}
+.zona-cta .btn{padding:14px 20px}
+.zona-faq-tit{margin-top:72px}
+.tipos-chapa{margin-top:40px;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:2px}
+.tipos-chapa div{background:#fff;border-top:3px solid var(--oxide);padding:20px 22px}
+.tipos-chapa dt{font-family:var(--disp);font-weight:700;font-size:1.3rem;text-transform:uppercase}
+.tipos-chapa dd{margin-top:6px;font-size:.92rem;color:#3a4049}
+.tipos-cta{margin-top:32px}
+/* Entre 961 y 1100 px no entran logo + 6 enlaces + CTA + consulta: el CTA se oculta
+   (Contacto, el botón Consulta y WhatsApp siguen visibles). */
+@media (max-width:1100px) and (min-width:961px){.nav-cta{display:none}nav.primary a{font-size:.76rem}}

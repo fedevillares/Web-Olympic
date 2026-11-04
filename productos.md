@@ -1,4 +1,4 @@
-# Productos — Olympic San Luis S.A.
+# Productos — venta de chapa de acero y metal desplegado en Pérez, Gran Rosario — Olympic San Luis S.A.
 
 > Laminados planos, metal desplegado y galvanizado. Stock permanente y corte a medida para la industria metalmecánica.
 
@@ -15,6 +15,20 @@ Tabla completa de medidas y pesos: [metal desplegado](https://olympicsanluis.com
 Hojas de acero en largos estándar y especiales, con terminaciones para cada etapa del proceso productivo.
 
 Terminaciones: laminada en frío, laminada en caliente, plates, caliente y decapada, antideslizante, galvanizada, cincalum, electrocincada, prepintada.
+
+## Tipos de chapa que vendemos
+
+Todas en hojas estándar o cortadas a medida en la planta de Pérez (Gran Rosario), en espesores de 0,30 a 13 mm, con entrega en Rosario, el Gran Rosario y la región.
+
+- **Chapa laminada en frío**: Superficie lisa y espesor preciso para estampado, plegado, muebles metálicos y piezas que se pintan.
+- **Chapa laminada en caliente**: También llamada chapa negra: la opción económica para estructuras, bases, carrocerías y piezas soldadas.
+- **Caliente y decapada**: Laminada en caliente sin cascarilla, lista para soldar, pintar o conformar.
+- **Plates**: Chapas gruesas para estructuras, maquinaria agrícola y piezas de alta exigencia.
+- **Chapa antideslizante**: Con relieve para pisos, escalones, rampas, pasarelas y cajas de carga.
+- **Chapa galvanizada**: Recubierta de zinc para intemperie y ambientes húmedos: conductos, cerramientos, techos y zinguería.
+- **Cincalum**: Recubrimiento de aluminio y zinc con mayor resistencia a la corrosión para techos, cerramientos y construcción en seco.
+- **Electrocincada**: Capa de zinc fina y uniforme, ideal para piezas que se pintan y para electrodomésticos.
+- **Chapa prepintada**: Viene pintada de fábrica, lista para fachadas, cerramientos y paneles.
 
 ## Galvanizado
 
