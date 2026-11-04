@@ -35,6 +35,8 @@ RedirectMatch 301 ^/historia/?$ /historia.html
 RedirectMatch 301 ^/historia-de-nuestra-empresa/?$ /historia.html
 RedirectMatch 301 ^/pages/?$ /index.html
 RedirectMatch 301 ^/productos-laminados-planos-y-metal-desplegado/?$ /productos.html
+# Sinónimos de búsqueda de metal desplegado hacia la página canónica
+RedirectMatch 301 ^/(metal-expandido|malla-desplegada|chapa-desplegada|metal-desplegado)/?$ /metal-desplegado.html
 
 # Regla generica: cualquier URL "limpia" (sin extension) que coincida
 # con una pagina .html existente, redirige 301 a la version .html
