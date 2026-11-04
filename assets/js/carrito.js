@@ -102,7 +102,7 @@ function ui() {
         <input name="nombre" autocomplete="name" maxlength="60" placeholder="Nombre" aria-label="Nombre">
         <input name="empresa" autocomplete="organization" maxlength="60" placeholder="Empresa" aria-label="Empresa">
         <input name="localidad" autocomplete="address-level2" maxlength="60" placeholder="Localidad" aria-label="Localidad">
-        <input name="comentario" maxlength="300" placeholder="Comentarios (plazo, entrega…)" aria-label="Comentarios">
+        <input name="comentario" maxlength="300" placeholder="Comentarios" aria-label="Comentarios">
       </fieldset>
       <div class="cart-acciones">
         <button type="submit" class="btn btn-wa">Consultar por WhatsApp</button>
