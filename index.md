@@ -53,7 +53,7 @@ Escribinos por WhatsApp al +54 9 341 692-4220, a ventas@olympicsanluis.com.ar o 
 
 ## Respaldo institucional
 
-- Centro de servicios de Ternium Argentina.
+- Centro de servicios de Ternium Argentina: https://ar.ternium.com/es
 - Integrantes de la Cámara de Centros de Servicios Metalúrgicos (CCSM): https://ccsm.org.ar/
 - Socios de AIM Rosario (Asociación de Industriales Metalúrgicos de Rosario): https://www.aim-rosario.org.ar
 
