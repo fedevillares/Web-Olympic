@@ -91,25 +91,25 @@ function ui() {
   dlg.setAttribute('aria-labelledby', 'cart-tit');
   dlg.innerHTML = `
     <div class="cart-head">
-      <h2 id="cart-tit">Tu consulta</h2>
+      <h2 id="cart-tit">Tu consulta <span class="cart-head-n"></span></h2>
       <button type="button" class="cart-x" aria-label="Cerrar carrito">✕</button>
     </div>
     <p class="cart-vacio">Todavía no sumaste productos. Elegí medidas desde la <a class="link" href="metal-desplegado.html#medidas">tabla de metal desplegado</a>.</p>
     <ul class="cart-lista" aria-label="Productos en la consulta"></ul>
     <form class="cart-form" novalidate>
       <fieldset>
-        <legend>Tus datos (opcional, agilizan la respuesta)</legend>
-        <label>Nombre<input name="nombre" autocomplete="name" maxlength="60"></label>
-        <label>Empresa<input name="empresa" autocomplete="organization" maxlength="60"></label>
-        <label>Localidad<input name="localidad" autocomplete="address-level2" maxlength="60"></label>
-        <label class="full">Comentarios<textarea name="comentario" rows="2" maxlength="300" placeholder="Plazo, entrega, forma de pago…"></textarea></label>
+        <legend>Tus datos <span>(opcional)</span></legend>
+        <input name="nombre" autocomplete="name" maxlength="60" placeholder="Nombre" aria-label="Nombre">
+        <input name="empresa" autocomplete="organization" maxlength="60" placeholder="Empresa" aria-label="Empresa">
+        <input name="localidad" autocomplete="address-level2" maxlength="60" placeholder="Localidad" aria-label="Localidad">
+        <input name="comentario" maxlength="300" placeholder="Comentarios (plazo, entrega…)" aria-label="Comentarios">
       </fieldset>
-      <details class="cart-preview"><summary>Ver el mensaje que se envía</summary><pre></pre></details>
       <div class="cart-acciones">
         <button type="submit" class="btn btn-wa">Consultar por WhatsApp</button>
         <button type="button" class="cart-vaciar">Vaciar</button>
       </div>
-      <p class="cart-nota">Se abre WhatsApp con el detalle listo para enviar. No es una compra: nuestro equipo confirma stock, precio y plazos.</p>
+      <details class="cart-preview"><summary>Ver mensaje</summary><pre></pre></details>
+      <p class="cart-nota">No es una compra: confirmamos stock, precio y plazos por WhatsApp.</p>
     </form>`;
 
   const toast = document.createElement('div');
@@ -133,6 +133,7 @@ function ui() {
     const n = items.length;
     boton.hidden = n === 0 && !document.querySelector('[data-carrito-fijo]');
     badge.textContent = String(n);
+    dlg.querySelector('.cart-head-n').textContent = n ? `(${n})` : '';
     boton.setAttribute('aria-label', n ? `Abrir consulta: ${n} ${n === 1 ? 'producto' : 'productos'}` : 'Abrir consulta (vacía)');
     vacio.hidden = n > 0;
     form.hidden = n === 0;
@@ -150,7 +151,7 @@ function ui() {
       q.setAttribute('aria-label', `Cantidad de ${i.unidad}: ${i.titulo} ${i.detalle}`);
       const u = document.createElement('span'); u.className = 'cart-unidad'; u.textContent = i.unidad;
       const x = document.createElement('button');
-      x.type = 'button'; x.className = 'cart-quitar'; x.textContent = 'Quitar';
+      x.type = 'button'; x.className = 'cart-quitar'; x.textContent = '✕';
       x.setAttribute('aria-label', `Quitar ${i.titulo} ${i.detalle}`);
       li.append(info, q, u, x);
       return li;
@@ -190,12 +191,18 @@ function ui() {
   dlg.querySelector('.cart-x').addEventListener('click', () => dlg.close());
   // Cerrar al tocar fuera del panel.
   dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
-  dlg.addEventListener('close', () => { document.documentElement.classList.remove('cart-abierto'); boton.focus(); });
+  dlg.addEventListener('close', () => {
+    document.documentElement.classList.remove('cart-abierto');
+    const destino = abridor && abridor.isConnected && !abridor.hidden ? abridor : boton;
+    destino.focus();
+  });
   boton.addEventListener('click', () => _ui.abrir());
 
   let tt;
+  let abridor = null;
   _ui = {
     abrir() {
+      if (!dlg.open) abridor = document.activeElement;
       pintar();
       if (!dlg.open) dlg.showModal();
       document.documentElement.classList.add('cart-abierto');
@@ -226,9 +233,18 @@ else montar();
 // Asegura la UI apenas se agrega el primer producto aunque la página arrancara vacía.
 listeners.add(() => { if (!_ui && items.length) ui(); });
 
-// Enlaces "#carrito" en cualquier página abren el panel.
+// Botón del encabezado (está en el HTML de cada página): contador siempre al día.
+carrito.onChange((lista) => {
+  document.querySelectorAll('[data-cart-count]').forEach((el) => { el.textContent = String(lista.length); });
+  document.querySelectorAll('[data-cart-open]').forEach((el) => {
+    el.classList.toggle('con-items', lista.length > 0);
+    el.setAttribute('aria-label', lista.length ? `Abrir consulta: ${lista.length} ${lista.length === 1 ? 'producto' : 'productos'}` : 'Abrir consulta (vacía)');
+  });
+});
+
+// Enlaces "#carrito" y botones [data-cart-open] en cualquier página abren el panel.
 document.addEventListener('click', (e) => {
-  const a = e.target.closest('a[href="#carrito"]');
+  const a = e.target.closest('a[href="#carrito"], [data-cart-open]');
   if (!a) return;
   e.preventDefault();
   ui().abrir();
